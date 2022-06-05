@@ -35,5 +35,5 @@ func main() {
 		}
 	}
 
-	fmt.Println(numbers)
+	fmt.Println("Простые числа 1 < s < N : ", numbers)
 }
