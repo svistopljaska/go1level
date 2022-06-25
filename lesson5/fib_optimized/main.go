@@ -17,7 +17,6 @@ func fib(n int64) int64 {
 	val = fib(n-1) + fib(n-2)
 	cache[n] = val
 	return val
-
 }
 
 func main() {
@@ -35,5 +34,4 @@ func main() {
 	}
 
 	fmt.Printf("Result: %d", fib(n))
-
 }
