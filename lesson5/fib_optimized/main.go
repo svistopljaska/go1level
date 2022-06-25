@@ -9,9 +9,6 @@ var cache Cache
 
 //fib calculates the Nth Fibbonacci number
 func fib(n int64) int64 {
-	if n == 1 || n == 2 {
-		return 1
-	}
 	val, ok := cache[n]
 	if ok {
 		return val
@@ -26,6 +23,9 @@ func fib(n int64) int64 {
 func main() {
 	var n int64
 	cache = make(Cache)
+
+	cache[1] = 1
+	cache[2] = 1
 
 	fmt.Print("Enter which number of fibbonacci must be calculated: ")
 
